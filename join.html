@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GitHub 가입 안내</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 29 16 16 29 3 16Z' fill='%232563eb'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5b6470; --line: #e3e6ea;
+    --accent: #2563eb; --accent-text: #ffffff; --accent-soft: #e8efff;
+    --ok: #e7f6ec; --ok-line: #9fd6b0; --note: #fff7e0; --note-line: #f0d68a; --warn: #fdecec; --warn-line: #f0a8a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1216; --card: #171b21; --text: #e7eaee; --muted: #9aa3ae; --line: #2a3038;
+      --accent: #4f8cff; --accent-text: #0b1020; --accent-soft: #1b2740;
+      --ok: #12291b; --ok-line: #2f6b43; --note: #2a2414; --note-line: #5c4b1f; --warn: #2d1616; --warn-line: #6b2f2f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1216; --card: #171b21; --text: #e7eaee; --muted: #9aa3ae; --line: #2a3038;
+    --accent: #4f8cff; --accent-text: #0b1020; --accent-soft: #1b2740;
+    --ok: #12291b; --ok-line: #2f6b43; --note: #2a2414; --note-line: #5c4b1f; --warn: #2d1616; --warn-line: #6b2f2f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 800px; margin: 0 auto; padding: 48px 16px 40px; }
+  a { color: var(--accent); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--accent); font-size: 18px; text-decoration: none; }
+  .brand svg { width: 20px; height: 20px; }
+  h1 { font-size: clamp(26px, 5vw, 34px); line-height: 1.3; margin: 18px 0 8px; letter-spacing: -0.02em; }
+  .lead { color: var(--muted); font-size: 17px; margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; }
+  .summary ol { margin: 0; padding-left: 22px; }
+  .summary li { margin: 4px 0; }
+  .summary .time { color: var(--muted); font-size: 14px; }
+  .step { position: relative; padding-left: 64px; }
+  .step .num {
+    position: absolute; left: 20px; top: 22px; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--accent); color: var(--accent-text); font-weight: 700; display: grid; place-items: center;
+  }
+  h2 { font-size: 20px; margin: 2px 0 10px; }
+  h3 { font-size: 16px; margin: 18px 0 6px; }
+  ol.sub, ul.sub { margin: 6px 0; padding-left: 20px; }
+  ol.sub li, ul.sub li { margin: 6px 0; }
+  .ui { display: inline-block; border: 1px solid var(--line); background: var(--accent-soft); border-radius: 6px; padding: 0 7px; font-weight: 600; font-size: 0.93em; }
+  code { background: var(--accent-soft); padding: 1px 6px; border-radius: 5px; font-size: 0.92em; word-break: break-all; }
+  .box { border-radius: 10px; padding: 10px 14px; margin: 12px 0 2px; font-size: 15px; }
+  .box b:first-child { margin-right: 4px; }
+  .ok { background: var(--ok); border: 1px solid var(--ok-line); }
+  .tip { background: var(--note); border: 1px solid var(--note-line); }
+  .warn { background: var(--warn); border: 1px solid var(--warn-line); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); }
+  .faq dt { font-weight: 700; margin-top: 14px; }
+  .faq dd { margin: 4px 0 0; color: var(--text); }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; margin-top: 8px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-text); text-decoration: none; font-weight: 700; padding: 10px 18px; border-radius: 9px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 24px; }
+  @media (max-width: 560px) { .step { padding-left: 24px; padding-top: 64px; } .step .num { top: 20px; left: 24px; } }
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    main { padding: 0; max-width: none; }
+    .card { break-inside: avoid; border-color: #bbb; }
+    .noprint { display: none; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="./">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 29 16 16 29 3 16Z" fill="currentColor"/></svg>
+    DOCsParser
+  </a>
+  <h1>GitHub 가입 안내</h1>
+  <p class="lead">DOCsParser 설치 파일·사용 설명서·의견 게시판은 GitHub의 <b>AMC-docsparser</b> 공간에 있습니다.
+    처음 한 번만 아래 순서대로 가입하고 초대를 받으면 됩니다. 비용은 들지 않습니다.</p>
+
+  <section class="card summary">
+    <h2>한눈에 보기 <span class="time">· 약 10~15분</span></h2>
+    <ol>
+      <li>GitHub 계정 만들기 (무료)</li>
+      <li>2단계 인증 켜기 (휴대폰 인증 앱)</li>
+      <li>담당자에게 내 <b>사용자 이름</b> 알려 주기</li>
+      <li>메일로 온 <b>초대 수락</b>하기</li>
+      <li>DOCsParser 내려받기 · 게시판 둘러보기</li>
+    </ol>
+    <h3>준비물</h3>
+    <ul class="sub">
+      <li><b>메일 주소</b> — 회사 메일 권장 (개인 메일도 됩니다)</li>
+      <li><b>휴대폰</b> — 인증 앱(Microsoft Authenticator 또는 Google Authenticator) 설치용</li>
+      <li><b>PC 인터넷 브라우저</b> — Chrome 또는 Edge</li>
+    </ul>
+  </section>
+
+  <section class="card step" id="step1">
+    <div class="num">1</div>
+    <h2>GitHub 계정 만들기</h2>
+    <ol class="sub">
+      <li>브라우저에서 <a href="https://github.com/signup" target="_blank" rel="noopener"><code>https://github.com/signup</code></a> 에 들어갑니다.</li>
+      <li><b>Email</b> 칸에 메일 주소를 넣고 <span class="ui">Continue</span>를 누릅니다.</li>
+      <li><b>Password</b>(비밀번호)를 만듭니다.
+        <ul class="sub">
+          <li>15자 이상, 또는 <b>8자 이상 + 숫자 1개 + 영문 소문자 1개</b> 이상</li>
+          <li>회사 시스템 비밀번호와 <b>다른 것</b>으로 정하세요.</li>
+        </ul>
+      </li>
+      <li><b>Username</b>(사용자 이름)을 정합니다. 화면 주소와 게시판에 표시되는 이름입니다.
+        <ul class="sub">
+          <li>영문·숫자·하이픈(<code>-</code>)만 됩니다. 예) <code>hong-gildong</code>, <code>gdhong24</code></li>
+          <li>이미 있는 이름이면 빨간 글씨가 나옵니다. 숫자를 붙여 바꿔 보세요.</li>
+          <li><b>이 이름을 메모해 두세요.</b> 3단계에서 담당자에게 알려 줍니다.</li>
+        </ul>
+      </li>
+      <li><b>Country/Region</b>은 <span class="ui">South Korea</span>를 고릅니다.</li>
+      <li>소식 메일 수신(Email preferences)은 체크하지 않아도 됩니다.</li>
+      <li><span class="ui">Create account</span>를 누르면 <b>사람 확인 퍼즐</b>이 나옵니다. 화면 안내대로 풀어 주세요.</li>
+      <li>가입한 메일함에 GitHub가 보낸 <b>8자리 숫자 코드</b>가 옵니다. 화면에 그대로 입력합니다.</li>
+      <li>환영 질문(팀 규모, 관심 분야 등)이 나오면 아무거나 고르거나 <span class="ui">Skip</span>으로 건너뜁니다.</li>
+      <li>요금제를 묻는 화면이 나오면 <b>무료</b>를 고릅니다 (<span class="ui">Continue for free</span> 등).
+        <b>카드 정보는 넣지 않습니다.</b></li>
+    </ol>
+    <div class="box ok"><b>✓ 성공</b> 오른쪽 위에 동그란 프로필 그림이 보이면 가입 완료입니다.</div>
+    <div class="box tip"><b>도움말</b> 코드 메일이 5분이 지나도 안 오면 <b>스팸함·광고함</b>을 확인하세요. 회사 메일이 외부 메일을 막는 경우 개인 메일로 가입해도 됩니다.</div>
+  </section>
+
+  <section class="card step" id="step2">
+    <div class="num">2</div>
+    <h2>2단계 인증 켜기</h2>
+    <p>비밀번호가 새어 나가도 내 휴대폰이 없으면 로그인할 수 없게 하는 설정입니다. GitHub가 곧 켜라고 요구하므로 처음에 해 두는 것이 편합니다.</p>
+    <ol class="sub">
+      <li>휴대폰에 인증 앱을 설치합니다. <b>Microsoft Authenticator</b> 또는 <b>Google Authenticator</b> (앱스토어·Play 스토어, 무료)</li>
+      <li>PC에서 <a href="https://github.com/settings/security" target="_blank" rel="noopener"><code>https://github.com/settings/security</code></a> 에 들어갑니다.
+        (오른쪽 위 프로필 그림 → <span class="ui">Settings</span> → 왼쪽 <span class="ui">Password and authentication</span>)</li>
+      <li><span class="ui">Enable two-factor authentication</span>을 누릅니다.</li>
+      <li>화면에 <b>QR 코드</b>가 나옵니다. 휴대폰 인증 앱에서 <span class="ui">+</span> → <b>QR 코드 스캔</b>으로 찍습니다.</li>
+      <li>인증 앱에 나온 <b>6자리 숫자</b>를 PC 화면에 입력하고 <span class="ui">Continue</span>를 누릅니다.</li>
+      <li><b>복구 코드(Recovery codes)</b>가 나옵니다. <span class="ui">Download</span>를 눌러 저장하고, 안전한 곳에 보관합니다.</li>
+    </ol>
+    <div class="box warn"><b>중요</b> 복구 코드는 휴대폰을 잃어버리거나 바꿨을 때 로그인할 수 있는 <b>유일한 방법</b>입니다. 꼭 보관해 주세요. 휴대폰을 바꿀 때는 인증 앱을 새 휴대폰으로 옮긴 뒤 이전 휴대폰을 초기화하세요.</div>
+    <div class="box ok"><b>✓ 성공</b> 이후 로그인할 때 비밀번호 다음에 인증 앱의 6자리 숫자를 묻습니다.</div>
+  </section>
+
+  <section class="card step" id="step3">
+    <div class="num">3</div>
+    <h2>담당자에게 사용자 이름 알려 주기</h2>
+    <p>1단계에서 정한 <b>Username</b>(예: <code>hong-gildong</code>)을 사내 메신저나 메일로 DOCsParser 담당자에게 보내 주세요.</p>
+    <table>
+      <tr><th>보낼 내용</th><td>이름 · 소속 · GitHub 사용자 이름</td></tr>
+      <tr><th>예시</th><td>"홍길동 / ○○팀 / GitHub: hong-gildong 입니다. DOCsParser 초대 부탁드립니다."</td></tr>
+    </table>
+    <div class="box tip"><b>도움말</b> 사용자 이름을 잊었다면 GitHub 오른쪽 위 프로필 그림을 누르면 맨 위에 굵게 나옵니다. 비밀번호는 절대 보내지 않습니다.</div>
+  </section>
+
+  <section class="card step" id="step4">
+    <div class="num">4</div>
+    <h2>초대 수락하기</h2>
+    <ol class="sub">
+      <li>담당자가 초대하면 가입한 메일로 <b>"… invited you to join the AMC-docsparser organization"</b> 메일이 옵니다.</li>
+      <li>메일의 <span class="ui">Join @AMC-docsparser</span>(또는 View invitation)를 누릅니다.</li>
+      <li>GitHub 화면에서 <span class="ui">Join AMC-docsparser</span>를 누릅니다.</li>
+    </ol>
+    <div class="box tip"><b>도움말</b> 메일이 안 보이면 로그인한 상태에서
+      <a href="https://github.com/orgs/AMC-docsparser/invitation" target="_blank" rel="noopener"><code>https://github.com/orgs/AMC-docsparser/invitation</code></a> 에 바로 들어가도 됩니다.
+      초대는 <b>7일</b>이 지나면 만료됩니다. 만료됐으면 담당자에게 다시 요청해 주세요.</div>
+    <div class="box ok"><b>✓ 성공</b> <a href="https://github.com/AMC-docsparser/docsparser-hub" target="_blank" rel="noopener">안내 저장소</a>를 열었을 때 DOCsParser 소개 화면이 보이면 됩니다. "404 This is not the web page you are looking for"가 나오면 아직 초대가 수락되지 않았거나 로그아웃 상태입니다.</div>
+  </section>
+
+  <section class="card step" id="step5">
+    <div class="num">5</div>
+    <h2>DOCsParser 내려받기 · 게시판 둘러보기</h2>
+    <h3>내려받기</h3>
+    <ol class="sub">
+      <li>GitHub에 로그인한 브라우저로 <a href="./">내려받기 페이지</a>에 들어가 <span class="ui">내려받기</span>를 누릅니다.</li>
+      <li>받은 zip을 마우스 오른쪽 단추로 눌러 <b>압축 풀기</b>를 한 뒤, 폴더 안의 <code>install.bat</code>을 더블클릭합니다.</li>
+      <li>바탕화면의 <b>DOCsParser</b>로 실행합니다.</li>
+    </ol>
+    <div class="box tip"><b>도움말</b> 처음 실행할 때 'Windows의 PC 보호' 파란 창이 나오면 <span class="ui">추가 정보</span> → <span class="ui">실행</span>을 누르세요.</div>
+
+    <h3>의견 게시판에 글 쓰기</h3>
+    <ol class="sub">
+      <li><a href="https://github.com/AMC-docsparser/docsparser-hub/discussions" target="_blank" rel="noopener">의견 게시판</a>에 들어가 <span class="ui">New discussion</span>을 누릅니다.</li>
+      <li>분류를 고릅니다 — <b>Ideas</b>(개선 제안), <b>Q&amp;A</b>(질문), <b>Show and tell</b>(사례 공유)</li>
+      <li>양식 칸을 채우고 <span class="ui">Start discussion</span>을 누릅니다.</li>
+    </ol>
+    <div class="box warn"><b>지켜 주세요</b> 고객 자료·규격서 원문·사업명·체계명은 게시판에 올리지 않습니다. 화면을 첨부할 때도 이름이 보이지 않게 가려 주세요.</div>
+
+    <h3>새 버전 소식 받기 (선택)</h3>
+    <ol class="sub">
+      <li><a href="https://github.com/AMC-docsparser/docsparser-hub" target="_blank" rel="noopener">안내 저장소</a> 오른쪽 위 <span class="ui">Watch</span> → <span class="ui">Custom</span>을 누릅니다.</li>
+      <li><b>Releases</b>(새 버전)와 <b>Discussions</b>(게시판)를 체크하고 <span class="ui">Apply</span>를 누릅니다. 새 버전이 나오면 메일로 알려 줍니다.</li>
+    </ol>
+  </section>
+
+  <section class="card faq">
+    <h2>자주 묻는 질문</h2>
+    <dl>
+      <dt>Q. 돈이 드나요?</dt>
+      <dd>아니요. 개인 GitHub 계정과 이 공간은 모두 무료입니다. 결제 정보를 넣으라는 화면이 나오면 무료(Free)를 고르면 됩니다.</dd>
+      <dt>Q. 회사 메일과 개인 메일 중 무엇으로 가입하나요?</dt>
+      <dd>회사 메일을 권장합니다. 회사 메일이 외부 메일을 받지 못하면 개인 메일로 가입해도 됩니다. 나중에 Settings → Emails에서 메일을 추가할 수 있습니다.</dd>
+      <dt>Q. 내 정보가 외부에 공개되나요?</dt>
+      <dd>사용자 이름과 프로필 그림은 공개됩니다. 실명·회사·소개는 적지 않아도 됩니다. AMC-docsparser 구성원이라는 사실은 기본적으로 다른 구성원에게만 보입니다.</dd>
+      <dt>Q. 안내 저장소나 내려받기에서 404가 나와요.</dt>
+      <dd>① 로그인 상태인지 ② 4단계 초대를 수락했는지 확인하세요. 둘 다 했는데도 안 되면 담당자에게 사용자 이름을 다시 확인해 달라고 요청하세요.</dd>
+      <dt>Q. 비밀번호를 잊어버렸어요.</dt>
+      <dd><a href="https://github.com/password_reset" target="_blank" rel="noopener">비밀번호 재설정</a>에서 가입한 메일로 다시 만들 수 있습니다.</dd>
+      <dt>Q. 휴대폰을 바꿨더니 로그인이 안 돼요.</dt>
+      <dd>2단계에서 저장한 <b>복구 코드</b>로 로그인한 뒤, 새 휴대폰으로 2단계 인증을 다시 설정하세요.</dd>
+      <dt>Q. 화면이 이 안내와 조금 달라요.</dt>
+      <dd>GitHub 화면 문구는 가끔 바뀝니다. 비슷한 이름의 단추를 누르면 됩니다. 막히면 담당자에게 화면을 보여 주세요.</dd>
+    </dl>
+  </section>
+
+  <div class="nav noprint">
+    <a class="btn" href="./">내려받기 페이지로</a>
+    <a href="javascript:window.print()">이 안내 인쇄 · PDF로 저장</a>
+  </div>
+  <footer>사내 배포용 안내입니다. GitHub 화면 문구는 바뀔 수 있습니다.</footer>
+</main>
+</body>
+</html>
