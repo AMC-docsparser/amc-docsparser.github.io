@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DOCsParser 내려받기</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 29 16 16 29 3 16Z' fill='%232563eb'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5b6470; --line: #e3e6ea;
+    --accent: #2563eb; --accent-text: #ffffff; --accent-soft: #e8efff; --note: #fff7e0; --note-line: #f0d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1216; --card: #171b21; --text: #e7eaee; --muted: #9aa3ae; --line: #2a3038;
+      --accent: #4f8cff; --accent-text: #0b1020; --accent-soft: #1b2740; --note: #2a2414; --note-line: #5c4b1f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1216; --card: #171b21; --text: #e7eaee; --muted: #9aa3ae; --line: #2a3038;
+    --accent: #4f8cff; --accent-text: #0b1020; --accent-soft: #1b2740; --note: #2a2414; --note-line: #5c4b1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--accent); font-size: 20px; }
+  .brand svg { width: 22px; height: 22px; }
+  h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.3; margin: 18px 0 10px; letter-spacing: -0.02em; }
+  .lead { color: var(--muted); font-size: 17px; margin: 0 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin-bottom: 18px; }
+  .dl { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--accent-text);
+    text-decoration: none; font-weight: 700; font-size: 17px; padding: 14px 22px; border-radius: 10px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn svg { width: 20px; height: 20px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .meta b { color: var(--text); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 16px; font-size: 15px; }
+  .links a { color: var(--accent); text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 10px; padding: 12px 14px; font-size: 14px; margin-top: 18px; }
+  h2 { font-size: 18px; margin: 0 0 14px; }
+  ol { margin: 0; padding-left: 20px; }
+  ol li { margin: 6px 0; }
+  code { background: var(--accent-soft); padding: 1px 6px; border-radius: 5px; font-size: 0.92em; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .feat { border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .feat b { display: block; margin-bottom: 4px; }
+  .feat span { color: var(--muted); font-size: 14px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } main { padding-top: 36px; } }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 29 16 16 29 3 16Z" fill="currentColor"/></svg>
+    DOCsParser
+  </div>
+  <h1>회사 양식 그대로, AI가 문서를 쓰게 합니다</h1>
+  <p class="lead">양식 문서로 AI 스킬을 만들고, 규격서에서 요구도 추적성 표를 뽑는 사내 Windows 프로그램입니다. 프로그램은 PC 안에서만 동작합니다.</p>
+
+  <section class="card">
+    <div class="dl">
+      <a class="btn" id="download" href="https://github.com/AMC-docsparser/docsparser-hub/releases/download/v1.0.2/DOCsParser-v1.0.2.zip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+        내려받기
+      </a>
+      <div class="meta"><b>버전 1.0.2</b> · Windows 10/11 64비트 · zip 약 60MB<br>
+        <a href="https://github.com/AMC-docsparser/docsparser-hub/releases" style="color:inherit">다른 버전 · 변경 내역</a></div>
+    </div>
+    <div class="note">
+      내려받으려면 <b>GitHub에 로그인</b>하고 <b>AMC-docsparser 조직에 초대</b>되어 있어야 합니다.
+      버튼을 눌렀을 때 404(페이지 없음)가 나오면 로그인 상태와 초대 수락 여부를 확인해 주세요.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>설치</h2>
+    <ol>
+      <li>내려받은 zip을 마우스 오른쪽 단추로 눌러 <b>압축 풀기</b>를 합니다.</li>
+      <li>압축을 푼 폴더의 <code>install.bat</code>을 더블클릭합니다. 관리자 권한은 필요 없습니다.</li>
+      <li>바탕화면이나 시작 메뉴의 <b>DOCsParser</b>로 실행합니다. 업데이트도 같은 방법입니다.</li>
+    </ol>
+    <div class="links">
+      <a href="https://github.com/AMC-docsparser/docsparser-hub">안내 저장소</a>
+      <a href="https://github.com/AMC-docsparser/docsparser-hub/blob/main/docs/install.md">설치 방법</a>
+      <a href="https://github.com/AMC-docsparser/docsparser-hub/blob/main/docs/usage.md">사용 설명서</a>
+      <a href="https://github.com/AMC-docsparser/docsparser-hub/discussions">의견 게시판</a>
+      <a href="https://github.com/AMC-docsparser/docsparser-hub/issues/new/choose">오류 신고</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>할 수 있는 일</h2>
+    <div class="grid">
+      <div class="feat"><b>스킬 생성</b><span>양식의 서식·장절·문체·표를 그대로 재현하는 AI 스킬</span></div>
+      <div class="feat"><b>요구도 추출</b><span>규격서에서 문장 단위 요구도 ID와 추적성 표</span></div>
+      <div class="feat"><b>회로 검토</b><span>넷리스트·BOM으로 AI 검토 패키지</span></div>
+    </div>
+  </section>
+
+  <footer>사내 배포용 페이지입니다. 링크는 초대받은 구성원에게만 열립니다.</footer>
+</main>
+</body>
+</html>
